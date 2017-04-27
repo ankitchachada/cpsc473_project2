@@ -1,2 +1,22 @@
-<h2 id="title">Welcome to Express Ember.js</h2>
-{{outlet}}
+    <header class="chat-app-header">
+      <h1>TypeMaster</h1>
+    </header>
+
+    <div class="panel panel-default chat-messages">
+        <ul class="panel-body chat-message-list" data-chat="message-list"></ul>
+    </div>
+
+    <section class="chat-input">
+      <form data-chat="chat-form" class="cb-container">
+        <div class="input-group">
+          <label for="js-message-input" class="sr-only">Message:</label>
+          <input type="text" class="form-control" data-chat="message-input" autofocus>
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div><!-- /input-group -->
+      </form>
+    </section>
+
+    <script src="/scripts/dist/main.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" type="text/javascript" charset="utf-8"></script> -->
